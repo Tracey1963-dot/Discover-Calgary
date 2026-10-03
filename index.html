@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="styles.css">
+    <title>Image Slider</title>
+</head>
+<body>
+
+    <h1>Comparing Images Slider</h1>
+    <div class="slider-container">
+  <!-- The "After" image acts as the base layer -->
+  <img class="img-after" src="after copy.jpg" alt="After image" />
+  
+  <!-- The "Before" image wrapper that gets cropped -->
+  <div class="img-before-wrapper">
+    <img class="img-before" src="before copy.jpg" alt="Before image" />
+  </div>
+
+  <!-- The native range input that acts as our invisible track and controller -->
+  <input type="range" min="0" max="100" value="50" class="slider-control" aria-label="Image comparison slider" />
+  
+  <!-- Visual indicator for the divider line and handle -->
+  <div class="slider-line" aria-hidden="true">
+    <div class="slider-button"></div>
+  </div>
+</div>
+    
+<script src="script.js"></script>   
+
+</body>
+</html>
